@@ -1,0 +1,18 @@
+---
+---
+
+@use  "../node_modules/bulma/sass" with (
+    $fullhd-enabled: false,
+    $widescreen-enabled: false
+);
+
+// Import Main CSS file from theme
+@import "main";
+
+.download-tab-content {
+    min-height: 18em;
+}
+
+.hero-title-img {
+    width: 30em !important
+}

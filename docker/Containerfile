@@ -1,0 +1,12 @@
+FROM localhost/my-jekyll
+
+# Install gems
+COPY Gemfile /srv/jekyll/
+
+WORKDIR /srv/jekyll
+
+RUN bundler install
+
+VOLUME /srv/jekyll
+
+EXPOSE 4000
