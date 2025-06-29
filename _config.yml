@@ -1,0 +1,32 @@
+# General
+title: OpenE2140
+tagline: A modernized remake of Earth 2140
+name: OpenE2140
+#email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  OpenE2140 is a modernized remake of Earth 2140 with new features.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: bulma-clean-theme
+
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - docker/
+  - .dockerignore
+  - .gitignore
+  - .editorconfig
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

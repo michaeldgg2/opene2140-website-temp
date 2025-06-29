@@ -1,0 +1,16 @@
+---
+---
+
+@use  "../node_modules/bulma/sass" with (
+    $fullhd-enabled: false,
+    $widescreen-enabled: false,
+    $family-primary: '"Oxanium Medium", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif'
+);
+
+@font-face {
+	font-family: "Oxanium Medium";
+	src: url("/assets/fonts/Oxanium-Medium.ttf") format("truetype");
+}
+
+// Import Main CSS file from theme
+@import "main";
