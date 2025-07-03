@@ -1,5 +1,6 @@
 - name: Download
   link: /download/
+  style: has-text-weight-bold has-text-danger
 - name: How To Play
   link: /how-to-play/
 - name: FAQ
