@@ -1,0 +1,10 @@
+---
+---
+
+@use "../node_modules/bulma/sass" with (
+    // Hack: using is-dark class on navbar breaks active and hovered background colors of the tab
+    $navbar-background-color: hsla(221deg, 14%, 21%, 1) !important
+);
+
+// Import Main CSS file from theme
+@import "main";
