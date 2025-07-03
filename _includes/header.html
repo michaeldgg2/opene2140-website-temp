@@ -31,7 +31,7 @@
                             <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
                                 <a
                                     href="{{ item.link | relative_url }}"
-                                    class="navbar-link {% if page.url contains item.link %}is-active{% endif %}"
+                                    class="navbar-link {% if page.url contains item.link %}is-active{% endif %} {{ item.style }}"
                                 >
                                     {{- item.name -}}
                                 </a>
@@ -49,7 +49,7 @@
                         {% else %}
                             <a
                                 href="{{ item.link | relative_url }}"
-                                class="navbar-item {% if item.link == page.url %}is-active{% endif %}"
+                                class="navbar-item {% if item.link == page.url %}is-active{% endif %} {{ item.style % }}"
                             >
                                 {{- item.name -}}
                             </a>
