@@ -1,3 +1,5 @@
+- name: Download
+  link: /download/
 - name: FAQ
   link: /faq/
 - name: Gallery

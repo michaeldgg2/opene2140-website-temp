@@ -1,0 +1,5 @@
+{% assign release = site.data.latest_release %}
+
+{% assign windows = release.assets.windows %}
+{% assign linux = release.assets.linux %}
+{% assign macos = release.assets.macos %}

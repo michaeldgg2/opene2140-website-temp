@@ -1,0 +1,34 @@
+{
+    "name": "release-20250330",
+    "published_at": "2025-03-30T17:36:43Z",
+    "assets": {
+        "windows": {
+            "size": 44026360,
+            "size_mb": 41.99,
+            "size_h": "41.99 MB",
+            "filename": "OpenRA-release-20250330-x64.exe",
+            "download_url": "https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-release-20250330-x64.exe"
+        },
+        "linux": {
+            "size": 61266292,
+            "size_mb": 58.49,
+            "size_h": "58.49 MB",
+            "filename": "OpenRA-Red-Alert-x86_64.AppImage",
+            "download_url": "https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-Red-Alert-x86_64.AppImage"
+        },
+        "macos": {
+            "size": 159559841,
+            "size_mb": 152.17,
+            "size_h": "152.17 MB",
+            "filename": "OpenRA-release-20250330.dmg",
+            "download_url": "https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-release-20250330.dmg"
+        },
+        "source": {
+            "size": 32489806,
+            "size_mb": 31,
+            "size_h": "30.99 MB",
+            "filename": "OpenRA-release-20250330-source.tar.bz2",
+            "download_url": "https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-release-20250330-source.tar.bz2"
+        }
+    }
+}
