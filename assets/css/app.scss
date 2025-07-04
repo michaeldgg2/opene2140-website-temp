@@ -2,6 +2,9 @@
 ---
 
 @use "../node_modules/bulma/sass" with (
+    $fullhd-enabled: false,
+    $widescreen-enabled: false,
+    
     // Hack: using is-dark class on navbar breaks active and hovered background colors of the tab
     $navbar-background-color: hsla(221deg, 14%, 21%, 1) !important
 );
