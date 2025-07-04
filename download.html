@@ -1,0 +1,189 @@
+---
+layout: page
+title: Download
+permalink: /download/
+hide_hero: true
+hide_footer: true
+---
+
+{% include assets %}
+
+<h3 class="title is-3">Download OpenE2140</h3>
+
+<article class="message is-warning">
+    <div class="message-header">OpenE2140 is still work-in-progress</div>
+    <div class="message-body">
+        <div class="columns is-vcentered">
+            <div class="column is-narrow is-hidden-mobile">
+                <span class="icon has-text-warning is-large">
+                    <i class="fas fa-exclamation-triangle fa-3x"></i>
+                </span>
+            </div>
+            <div class="column">
+                This means that there are still things that either don't work as expected, has issues or don't work at all.
+                <strong>Please read the <a href="{% link known-issues.md %}">list of known issues</a> carefully</strong> to see,
+                if the problems you're experiencing, are something that we're already aware of.
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class="message is-warning">
+    <div class="message-header">OpenE2140 requires files from Earth 2140</div>
+    <div class="message-body">
+        <div class="columns is-vcentered">
+            <div class="column is-narrow is-hidden-mobile">
+                <span class="icon has-text-warning is-large">
+                    <i class="fas fa-exclamation-triangle fa-3x"></i>
+                </span>
+            </div>
+            <div class="column">
+                In order to run OpenE2140, you need to provide data files from the original game.
+                For instructions on how to install the necessary files <a href="{% link how-to-play.md %}">see the How To Play page</a>.
+            </div>
+        </div>
+    </div>
+</article>
+
+<div x-data="{ selectedTab: 'windows' }">
+    <div class="tabs is-centered">
+        <ul>
+            <li x-on:click="selectedTab = 'windows'" :class="{ 'is-active': selectedTab === 'windows' }">
+                <a class="icon-text">
+                    <span>
+                        <i class="fa-brands fa-windows"></i>
+                    </span>
+                    <span>Windows</span>
+                </a>
+            </li>
+            <li x-on:click="selectedTab = 'macos'" :class="{ 'is-active': selectedTab === 'macos' }">
+                <a class="icon-text">
+                    <span>
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    <span>macOS</span>
+                </a>
+            </li>
+            <li x-on:click="selectedTab = 'linux'" :class="{ 'is-active': selectedTab === 'linux' }">
+                <a class="icon-text">
+                    <span>
+                        <i class="fa-brands fa-linux"></i>
+                    </span>
+                    <span>Linux</span>
+                </a>
+            </li>
+            <li x-on:click="selectedTab = 'source'" :class="{ 'is-active': selectedTab === 'source' }">
+                <a class="icon-text">
+                    <span>
+                        <i class="fa-brands fa-github"></i>
+                    </span>
+                    <span>Source</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="">
+        <div class="content" x-show="selectedTab === 'windows'" x-show.transition>
+            <h4 class="title is-4" :class="'is-hidden'">Windows</h4>
+            
+            <p>OpenE2140 works on most computers running Windows 10 or later that support DirectX 11 or OpenGL 3+.</p>
+            
+            <div class="is-flex is-justify-content-center">
+                <a href="{{ windows.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                    <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
+                    <div class="is-family-monospace is-size-6">{{ windows.filename }} ({{ windows.size_mb }} MB)</div>
+                </a>
+            </div>
+            
+            <div class="columns is-vcentered mt-5">
+                <div class="column is-narrow is-hidden-mobile">
+                    <div class="box has-background-black-ter">
+                        <span class="icon has-text-warning is-medium">
+                            <i class="fas fa-exclamation-triangle fa-2x"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="column box">
+                    While it is possible that OpenE2140 might work on Windows 7 and Windows 8.1,
+                    <abbr title="A cross-platform software framework created by Microsoft">.NET</abbr> is no longer supported on these versions,
+                    therefore we don't officially support them either.
+                </div>
+            </div>
+        </div>
+
+        <div class="content" x-show="selectedTab === 'macos'" x-show.transition>
+            <h4 class="title is-4" :class="'is-hidden'">macOS</h4>
+            
+            <p>OpenE2140 requires Mac systems to be running macOS 10.15 (Catalina) or later.</p>
+            
+            <div class="is-flex is-justify-content-center">
+                <a href="{{ macos.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                    <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
+                    <div class="is-family-monospace is-size-6">{{ macos.filename }} ({{ macos.size_mb }} MB)</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content" x-show="selectedTab === 'linux'" x-show.transition>
+            <h4 class="title is-4" :class="'is-hidden'">Linux</h4>
+            
+            <p>
+                Any modern and recent enough Linux distribution is fine for OpenE2140.
+                While OpenE2140 is developed mainly on Windows machines, we always test it on
+                at least one Linux distribution (currently Ubuntu 24.04).
+            </p>
+
+            <p>
+                OpenE2140 is currently distributed on Linux system as AppImage only.
+                We'll consider different distribution channels in the future.
+            </p>
+            
+            <div class="is-flex is-justify-content-center">
+                <a href="{{ linux.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                    <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
+                    <div class="is-family-monospace is-size-6">{{ linux.filename }} ({{ linux.size_mb }} MB)</div>
+                </a>
+            </div>
+            
+            <div class="columns is-vcentered mt-1">
+                <div class="column is-narrow is-hidden-mobile">
+                    <div class="box has-background-black-ter">
+                        <span class="icon has-text-info is-medium">
+                            <i class="fa-classic fa-solid fa-info fa-2x"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="column box">
+                    Download the AppImage file, make it executable and then run it to play!
+                    You can also install the optional <a href="https://github.com/AppImage/appimaged/">appimaged</a> tool to integrate OpenE2140 into your system launcher.
+                </div>
+            </div>
+        </div>
+
+        <div class="content mb-5" x-show="selectedTab === 'source'" x-show.transition>
+            <h4 class="title is-4" :class="'is-hidden'">Source code</h4>
+            
+            <p>OpenE2140 can be compiled from source on all supported platforms.</p>
+            
+            <div class="is-flex is-justify-content-center">
+                <a href="{{ source.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                    <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
+                    <div class="is-family-monospace is-size-6">{{ source.filename }} ({{ source.size_mb }} MB)</div>
+                </a>
+            </div>
+            
+            <div class="columns is-vcentered mt-1">
+                <div class="column is-narrow is-hidden-mobile">
+                    <div class="box has-background-black-ter">
+                        <span class="icon has-text-info is-medium">
+                            <i class="fa-classic fa-solid fa-info fa-2x"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="column box">
+                    For information on how to compile OpenE2140, <a href="https://github.com/OpenE2140/OpenE2140/blob/{{ release.name }}/INSTALL.md">see the instructions on GitHub</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
