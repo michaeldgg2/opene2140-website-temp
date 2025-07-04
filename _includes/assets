@@ -3,3 +3,4 @@
 {% assign windows = release.assets.windows %}
 {% assign linux = release.assets.linux %}
 {% assign macos = release.assets.macos %}
+{% assign source = release.assets.source %}
