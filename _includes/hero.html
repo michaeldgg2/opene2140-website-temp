@@ -6,7 +6,14 @@
 >
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container">
-            <h1 class="title is-2">{{ page.title }}</h1>
+            {% if page.hero_title_image %}
+                <img
+                    class="{% if page.hero_title_image_style %}{{ page.hero_title_image_style }}{% endif %}"
+                    src="{{ page.hero_title_image | relative_url }}"
+                />
+            {% else %}
+                <h1 class="title is-2">{{ page.title }}</h1>
+            {% endif %}
             <p class="subtitle is-3">{{ page.subtitle }}</p>
             {% if page.hero_link %}
                 <div class="my-4">
