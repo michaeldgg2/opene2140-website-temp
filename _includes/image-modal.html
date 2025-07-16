@@ -1,0 +1,20 @@
+<div x-data="{ open: false }" markdown="0">
+    <a x-on:click="open = true" title="View large image">
+        <figure class="image {{ include.ratio | default: is-16by9 }}">
+            <img src="{{ include.link | relative_url }}" alt="{{ include.alt }}">
+        </figure>
+    </a>
+    <div class="modal is-full" x-bind:class="open ? 'is-active' : ''" x-cloak x-on:keydown.escape.window="open = false">
+        <div class="modal-background" x-on:click="open = false"></div>
+        <div class="modal-content" style="min-width: 70%">
+            <p class="image {{ include.ratio | default: is-16by9 }}">
+                {% if include.large_link %}
+                    <img src="{{ include.large_link | relative_url }}" alt="{{ include.alt }}">
+                {% else %}
+                    <img src="{{ include.link | relative_url }}" alt="{{ include.alt }}">
+                {% endif %}
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+    </div>
+</div>
