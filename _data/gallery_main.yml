@@ -1,19 +1,19 @@
-- title: OpenE2140
-  images:
-    - link: /galleries/main/00_base_building.png
+- title: Screenshots
+  media:
+    - image: /galleries/main/00_base_building.png
       alt: "Base building"
       description: "Base building"
-    - link: /galleries/main/01_base_building.png
+    - image: /galleries/main/01_base_building.png
       alt: "Base building"
       description: "Base building"
 
-    - link: /galleries/main/20_battle.png
+    - image: /galleries/main/20_battle.png
       alt: "Battle"
       description: "Battle"
-    - link: /galleries/main/21_battle.png
+    - image: /galleries/main/21_battle.png
       alt: "Battle"
       description: "Battle"
 
-    - link: /galleries/main/30_scientist.png
+    - image: /galleries/main/30_scientist.png
       alt: "Scientist"
       description: "New unit: Scientist"
