@@ -1,0 +1,76 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery/
+hide_hero: true
+hide_footer: true
+media_gallery: gallery_main
+---
+
+<article class="message is-info">
+    <div class="message-header">OpenE2140 is still a work in progress</div>
+    <div class="message-body">
+        <div class="columns is-vcentered">
+            <div class="column is-narrow is-hidden-mobile">
+                <span class="icon has-text-info is-medium">
+                    <i class="fa-classic fa-solid fa-info fa-2x"></i>
+                </span>
+            </div>
+            <div class="column">
+                <p>Since OpenE2140 is still a work in progress, some screenshots or videos may not reflect the current state of the game.</p>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% if page.media_gallery %}
+    {% assign galleries=site.data.[page.media_gallery] %}
+    {% for gallery in galleries %}
+        <div class="columns is-multiline my-3">
+            <div class="column is-12">
+                <p class="title is-3 has-text-centered">{{ gallery.title }}</p>
+            </div>
+            {% for media in gallery.media %}
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            {% if media.image %}
+                                {% include image-modal.html ratio=media.ratio link=media.image alt=media.alt large_link=media.large_link %}
+                            {% elsif media.video %}
+                                <video autoplay loop controls size="width: 100%">
+                                    <source src="{{ media.video }}" type="video/mp4" />
+                                </video>
+                            {% elsif media.embed %}
+                                <div x-data="{ open: false }" markdown="0">
+                                    <a x-on:click="open = true" title="View video">
+                                        <figure class="image {{ media.ratio | default: is-16by9 }}">
+                                            <img src="{{ media.thumbnail }}" alt="{{ media.thumbnail_alt }}">
+                                        </figure>
+                                    </a>
+                                    <div class="modal is-full" x-bind:class="open ? 'is-active' : ''" x-cloak>
+                                        <div class="modal-background" x-on:click="open = false"></div>
+                                        <div class="modal-content">
+                                            <template x-if="open">
+                                                <div style="position: relative !important; padding: 200px">
+                                                    <iframe x-ref="iframe" src="{{ media.embed }}" width="100%" height="100%" style="position: absolute; inset: 0px;" frameborder="0"
+                                                        allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+                                                </div>
+                                            </template>
+                                        </div>
+                                        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+                                    </div>
+                                </div>
+                            
+                            {% endif %}
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                {{ media.description | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endif %}
