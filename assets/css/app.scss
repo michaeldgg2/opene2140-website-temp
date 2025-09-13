@@ -4,10 +4,16 @@
 @use "../node_modules/bulma/sass" with (
     $fullhd-enabled: false,
     $widescreen-enabled: false,
+    $family-primary: '"Oxanium Medium", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif',
     
     // Hack: using is-dark class on navbar breaks active and hovered background colors of the tab
     $navbar-background-color: hsla(221deg, 14%, 21%, 1) !important
 );
+
+@font-face {
+	font-family: "Oxanium Medium";
+	src: url("{{ '/assets/fonts/Oxanium-Medium.ttf' | relative_url }}") format("truetype");
+}
 
 // Import Main CSS file from theme
 @import "main";
