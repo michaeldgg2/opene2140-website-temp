@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  builder:
+    image: opene2140/website-builder:latest
+    command: bundler exec jekyll serve --source ./ --destination ./_site --host 0.0.0.0 --watch --livereload
+    userns_mode: keep-id
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - ../:/srv/jekyll
+    environment:
+      PAGES_REPO_NWO: michaeldgg2/opene2140-website-temp
