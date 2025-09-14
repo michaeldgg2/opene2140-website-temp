@@ -1,0 +1,22 @@
+FROM ruby:3.3.4-alpine
+
+# Add Jekyll dependencies to Alpine
+RUN apk update
+RUN apk add --no-cache build-base gcc cmake git
+
+WORKDIR /srv/jekyll
+
+# Install only bundler, the gems will be installed at runtime
+RUN gem install bundler
+
+COPY --chmod=755 ./docker/entrypoint.sh /
+
+VOLUME /srv/jekyll
+
+# Add unpriviledged user (for rootless mode)
+RUN adduser --disabled-password jekyll
+USER jekyll
+
+EXPOSE 4000
+
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
