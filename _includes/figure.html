@@ -1,6 +1,21 @@
 <figure>
-    <img alt="{{ include.alt }}" title="{{ include.alt }}"
-        src="{% if include.url %}{{ include.url }}{% else %}{{ include.src | relative_url }}{% endif %}"
-        {{ include.imgextra }} />
-    <figcaption>{{ include.alt }}</figcaption>
+    {% if include.thumbnail %}
+        {% if include.thumbnail != "" %}
+            {% assign thumbnail_width = include.thumbnail %}
+        {% else %}
+            {% assign thumbnail_width = "40em" %}
+        {% endif %}
+    <a href="{{ include.src | relative_url }}">
+    {% endif %}
+
+        <img alt="{{ include.alt }}" title="{{ include.alt }}"
+            src="{% if include.url %}{{ include.url }}{% else %}{{ include.src | relative_url }}{% endif %}"
+            {% if include.thumbnail %}style="width: {{ thumbnail_width }}"{% endif %}
+            {{ include.imgextra }}
+             />
+        <figcaption>{{ include.alt }}</figcaption>
+
+    {% if include.thumbnail %}
+    </a>
+    {% endif %}
 </figure>
