@@ -133,26 +133,42 @@ All of these files are mandatory to run:
 
 OpenE2140 can play music from the soundtrack of the original game (including Mission Pack 2). The music is optional though, game will work without it. The music files must be placed in a specific subfolder within the `Content` folder, and must be named correctly. Here is a list of the files, their sources, and required names:
 
-**TODO: update the list for all music tracks including the vocal soundtrack and other information**
+| Filename in `Content/e2140/music` folder | Source filename | Source folder/ZIP file |
+| :--- | :--- | :--- |
+| Track 1 - Child of 2140.ogg | music/1.ogg | Main game folder |
+| Track 2 - Hope.ogg | music/2.ogg | Main game folder |
+| Track 3 - Hurricane.ogg | music/3.ogg | Main game folder |
+| Track 4 - Before the Battle.ogg | music/4.ogg | Main game folder |
+| Track 5 - Everywhere.ogg | music/5.ogg | Main game folder |
+| Track 6 - Birds.ogg | music/6.ogg | Main game folder |
+| Track 7 - 2140.ogg | music/7.ogg | Main game folder |
+| Track 8 - EARTH Theme.ogg | music/8.ogg | Main game folder |
+| Track 9 - Total Control.ogg | music/9.ogg | Main game folder |
+| Track 10 - MP1 - Big Journey.mp3 | 12 - Big Journey.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 11 - MP1 - The Hunt.mp3 | 03 - The Hunt.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 12 - MP1 - Black Tech.mp3 | 08 - Black Tech.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 13 - MP1 - Deep in the Bunker.mp3 | 05 - Deep in the Bunker.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 14 - MP1 - Bubbles' Revenge.mp3 | 11 - Bubbles' Revenge.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 15 - MP1 - Space.mp3 | 15 - Space.mp3 | earth_2140_original_ost_mp3.zip |
+| Track 16 - MP2.mp3 | 10 - track_mp.mp3 | soundtrack |
+| Track 17 - MP2.mp3 | 11 - track_mp.mp3 | soundtrack |
+| Track 18 - MP2.mp3 | 12 - track_mp.mp3 | soundtrack |
+| Track 19 - MP2.mp3 | 13 - track_mp.mp3 | soundtrack |
+| Track 20 - MP2.mp3 | 14 - track_mp.mp3 | soundtrack |
+| Track 21 - MP2.mp3 | 15 - track_mp.mp3 | soundtrack |
+| Track 22 - MP2.mp3 | 16 - track_mp.mp3 | soundtrack |
+|     |     |     |
+| Child of 2140 - Vocals.mp3 | 02 - Child of 2140.mp3 | earth_2140_original_ost_mp3.zip |
+| Birds - Vocals.mp3 | 04 - Birds.mp3 | earth_2140_original_ost_mp3.zip |
+| Hurricane - Vocals.mp3 | 06 - Hurricane.mp3 | earth_2140_original_ost_mp3.zip |
+| Everywhere - Vocals.mp3 | 10 - Everywhere.mp3 | earth_2140_original_ost_mp3.zip |
+| Hope - Vocals.mp3 | 13 - Hope.mp3 | earth_2140_original_ost_mp3.zip |
+| 2140 - Vocals.mp3 | 14 - 2140.mp3 | earth_2140_original_ost_mp3.zip |
+|     |     |     |
+| EARTH Theme.mp3 | 01 - EARTH Theme.mp3 | earth_2140_original_ost_mp3.zip |
+| Before the Battle.mp3 | 07 - Before the Battle.mp3 | earth_2140_original_ost_mp3.zip |
+| Total Control (Extended).mp3 | 09 - Total Control.mp3 | earth_2140_original_ost_mp3.zip |
 
-- Mission Pack 2 - Track 10.mp3
-- Mission Pack 2 - Track 11.mp3
-- Mission Pack 2 - Track 12.mp3
-- Mission Pack 2 - Track 13.mp3
-- Mission Pack 2 - Track 14.mp3
-- Mission Pack 2 - Track 15.mp3
-- Mission Pack 2 - Track 16.mp3
-- Mission Pack 2 - Track 17.mp3
-- Mission Pack 2 - Track 18.mp3
-- Track 1 - Child of 2140.ogg
-- Track 2 - Hope.ogg
-- Track 3 - Hurricane.ogg
-- Track 4 - Before the Battle.ogg
-- Track 5 - Everywhere.ogg
-- Track 6 - Birds.ogg
-- Track 7 - 2140.ogg
-- Track 8 - EARTH Theme.ogg
-- Track 9 - Total Control.ogg
 
 {% include figure.html alt="Music files of the in-game soundtrack from the base game and Mission Pack 2." src="images/how-to-play/music_files.jpg" %}
 
