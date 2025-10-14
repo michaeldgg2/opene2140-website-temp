@@ -52,9 +52,15 @@ You can buy Earth 2140 from these supported digital stores:
 For more information, see the [How to Play page]({% link how-to-play.md %}).
 
 
+{: #demo-version}
 ## Why can't I use the demo version of Earth 2140 to play OpenE2140?
 
-Demo versions of Earth 2140 do not contain all the required game assets, therefore it cannot be used to play OpenE2140. See [How to Play OpenE2140 page]({% link how-to-play.md %}#demo-version) for more information.
+OpenE2140 requires the full set of assets from the original game, **including Mission Pack 2** (due to the new units and buildings it introduces).
+Therefore **demo versions are not supported**, because they lack the Mission Pack 2 content (such as specific tilesets and files for the additional units/buildings),
+which are essential for proper gameplay. As a result, the demo versions are incomplete and cannot be used with OpenE2140.
+
+While this is unfortunate for people wanting to just try out OpenE2140, it makes sense due to the fact that the demo is very limited
+and was released alongside **of the original game** (which couldn't contain the new assets from Mission Pack 2).
 
 
 ## Where can I ask for help, discuss with other players and developers, or find more information?
