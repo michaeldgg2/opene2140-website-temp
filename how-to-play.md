@@ -31,9 +31,7 @@ After installing OpenE2140, you will need to supply the original game assets. Cu
 
 {% include figure.html alt="Installation wizard for the game assets" src="images/how-to-play/content-manager-main.jpg" %}
 
-After installing the original game via the official clients of these stores, OpenE2140 can automatically detect and copy the necessary content from your installation.
-
-To install the assets, open **Manage Content** from the main game menu and press **Detect Disc or Installation**. This is the recommended method.
+After installing the original game via the official clients of these stores, OpenE2140 can automatically detect and copy the necessary content from your installation. Just start the game and press **Detect Disc or Installation**. This is the recommended method.
 
 {% include figure.html alt="Apart from the required game files, soundtracks can also be installed." src="images/how-to-play/content-manager-game-files-soundtrack-installed.jpg" %}
 
@@ -111,64 +109,177 @@ OpenE2140 is based on OpenRA, which stores game files in the following folders d
 * Linux: `~/.config/openra/Content/`
 * For portable installations: `Support\Content\` inside your `OpenRA` installation folder (create the folders if necessary)
 
-The required files for OpenE2140 must be placed in a folder named `e2140`; otherwise, the game will not find them and will show the asset installation screen.
+The required files for OpenE2140 must be placed in a folder named `e2140`; otherwise, the game will not find them and will show the asset installation screen. The screenshot below shows the correct folder structure.
 
 Note for Linux users: Linux filesystems are case-sensitive, so you must rename filenames to uppercase.
 
 ## Mandatory files
 
-All of these files are mandatory to run:
+All of these files are mandatory to run OpenE2140:
 
-- FLC.WD
-- GRAPH.WD
-- MENU.WD
-- MIX.WD
-- PIRO.WD
-- SMP0.WD
-- SMP1.WD
-
-{% include figure.html alt="OpenE2140 requires just a few files from Earth 2140 in order to work." src="images/how-to-play/game_files.jpg" %}
+<div class="columns">
+    <div class="column is-4">
+        <ul>
+          <li>FLC.WD</li>
+          <li>GRAPH.WD</li>
+          <li>MENU.WD</li>
+          <li>MIX.WD</li>
+          <li>PIRO.WD</li>
+          <li>SMP0.WD</li>
+          <li>SMP1.WD</li>
+        </ul>
+    </div>
+    <div class="column">
+        {% include figure.html alt="OpenE2140 requires just a few files from Earth 2140 in order to work." src="images/how-to-play/game_files.jpg" %}
+    </div>
+</div>
 
 ## Music files
 
-OpenE2140 can play music from the soundtrack of the original game (including Mission Pack 2). The music is optional though, game will work without it. The music files must be placed in a specific subfolder within the `Content` folder, and must be named correctly. Here is a list of the files, their sources, and required names:
+OpenE2140 can play music from the soundtrack of the original game (including both Mission Packs). The music is optional though; the game will work without it. The music files must be placed in a specific subfolder within the `Content` folder, and must be named correctly. Here is a list of the files, their original names and names required for OpenE2140:
 
-| Filename in `Content/e2140/music` folder | Source filename | Source folder/ZIP file |
-| :--- | :--- | :--- |
-| Track 1 - Child of 2140.ogg | music/1.ogg | Main game folder |
-| Track 2 - Hope.ogg | music/2.ogg | Main game folder |
-| Track 3 - Hurricane.ogg | music/3.ogg | Main game folder |
-| Track 4 - Before the Battle.ogg | music/4.ogg | Main game folder |
-| Track 5 - Everywhere.ogg | music/5.ogg | Main game folder |
-| Track 6 - Birds.ogg | music/6.ogg | Main game folder |
-| Track 7 - 2140.ogg | music/7.ogg | Main game folder |
-| Track 8 - EARTH Theme.ogg | music/8.ogg | Main game folder |
-| Track 9 - Total Control.ogg | music/9.ogg | Main game folder |
-| Track 10 - MP1 - Big Journey.mp3 | 12 - Big Journey.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 11 - MP1 - The Hunt.mp3 | 03 - The Hunt.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 12 - MP1 - Black Tech.mp3 | 08 - Black Tech.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 13 - MP1 - Deep in the Bunker.mp3 | 05 - Deep in the Bunker.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 14 - MP1 - Bubbles' Revenge.mp3 | 11 - Bubbles' Revenge.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 15 - MP1 - Space.mp3 | 15 - Space.mp3 | earth_2140_original_ost_mp3.zip |
-| Track 16 - MP2.mp3 | 10 - track_mp.mp3 | soundtrack |
-| Track 17 - MP2.mp3 | 11 - track_mp.mp3 | soundtrack |
-| Track 18 - MP2.mp3 | 12 - track_mp.mp3 | soundtrack |
-| Track 19 - MP2.mp3 | 13 - track_mp.mp3 | soundtrack |
-| Track 20 - MP2.mp3 | 14 - track_mp.mp3 | soundtrack |
-| Track 21 - MP2.mp3 | 15 - track_mp.mp3 | soundtrack |
-| Track 22 - MP2.mp3 | 16 - track_mp.mp3 | soundtrack |
-|     |     |     |
-| Child of 2140 - Vocals.mp3 | 02 - Child of 2140.mp3 | earth_2140_original_ost_mp3.zip |
-| Birds - Vocals.mp3 | 04 - Birds.mp3 | earth_2140_original_ost_mp3.zip |
-| Hurricane - Vocals.mp3 | 06 - Hurricane.mp3 | earth_2140_original_ost_mp3.zip |
-| Everywhere - Vocals.mp3 | 10 - Everywhere.mp3 | earth_2140_original_ost_mp3.zip |
-| Hope - Vocals.mp3 | 13 - Hope.mp3 | earth_2140_original_ost_mp3.zip |
-| 2140 - Vocals.mp3 | 14 - 2140.mp3 | earth_2140_original_ost_mp3.zip |
-|     |     |     |
-| EARTH Theme.mp3 | 01 - EARTH Theme.mp3 | earth_2140_original_ost_mp3.zip |
-| Before the Battle.mp3 | 07 - Before the Battle.mp3 | earth_2140_original_ost_mp3.zip |
-| Total Control (Extended).mp3 | 09 - Total Control.mp3 | earth_2140_original_ost_mp3.zip |
-
+<div class="table-container">
+    <table class="table is-striped">
+        <thead>
+            <tr class="is-dark">
+                <th>Filename in <code class="language-plaintext highlighter-rouge">Content/e2140/music</code> folder</th>
+                <th>Source filename</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Track 1 - Child of 2140.ogg</td>
+                <td>music/1.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 2 - Hope.ogg</td>
+                <td>music/2.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 3 - Hurricane.ogg</td>
+                <td>music/3.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 4 - Before the Battle.ogg</td>
+                <td>music/4.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 5 - Everywhere.ogg</td>
+                <td>music/5.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 6 - Birds.ogg</td>
+                <td>music/6.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 7 - 2140.ogg</td>
+                <td>music/7.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 8 - EARTH Theme.ogg</td>
+                <td>music/8.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 9 - Total Control.ogg</td>
+                <td>music/9.ogg</td>
+            </tr>
+            <tr>
+                <td>Track 10 - MP1 - Big Journey.mp3</td>
+                <td>12 - Big Journey.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 11 - MP1 - The Hunt.mp3</td>
+                <td>03 - The Hunt.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 12 - MP1 - Black Tech.mp3</td>
+                <td>08 - Black Tech.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 13 - MP1 - Deep in the Bunker.mp3</td>
+                <td>05 - Deep in the Bunker.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 14 - MP1 - Bubbles' Revenge.mp3</td>
+                <td>11 - Bubbles' Revenge.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 15 - MP1 - Space.mp3</td>
+                <td>15 - Space.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 16 - MP2.mp3</td>
+                <td>10 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 17 - MP2.mp3</td>
+                <td>11 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 18 - MP2.mp3</td>
+                <td>12 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 19 - MP2.mp3</td>
+                <td>13 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 20 - MP2.mp3</td>
+                <td>14 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 21 - MP2.mp3</td>
+                <td>15 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td>Track 22 - MP2.mp3</td>
+                <td>16 - track_mp.mp3</td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Child of 2140 - Vocals.mp3</td>
+                <td>02 - Child of 2140.mp3</td>
+            </tr>
+            <tr>
+                <td>Birds - Vocals.mp3</td>
+                <td>04 - Birds.mp3</td>
+            </tr>
+            <tr>
+                <td>Hurricane - Vocals.mp3</td>
+                <td>06 - Hurricane.mp3</td>
+            </tr>
+            <tr>
+                <td>Everywhere - Vocals.mp3</td>
+                <td>10 - Everywhere.mp3</td>
+            </tr>
+            <tr>
+                <td>Hope - Vocals.mp3</td>
+                <td>13 - Hope.mp3</td>
+            </tr>
+            <tr>
+                <td>2140 - Vocals.mp3</td>
+                <td>14 - 2140.mp3</td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>EARTH Theme.mp3</td>
+                <td>01 - EARTH Theme.mp3</td>
+            </tr>
+            <tr>
+                <td>Before the Battle.mp3</td>
+                <td>07 - Before the Battle.mp3</td>
+            </tr>
+            <tr>
+                <td>Total Control (Extended).mp3</td>
+                <td>09 - Total Control.mp3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 {% include figure.html alt="Music files of the in-game soundtrack from the base game and Mission Pack 2." src="images/how-to-play/music_files.jpg" %}
 
