@@ -30,6 +30,7 @@ fixed_navbar: top
 
 # Exclude from processing.
 exclude:
+  - scripts/
   - misc/
   - docker/
   - .dockerignore
