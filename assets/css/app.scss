@@ -25,3 +25,7 @@
 .hero-title-img {
     width: 30em !important;
 }
+
+html {
+    scroll-padding-top: calc($navbar-height + 1.0rem);
+}
