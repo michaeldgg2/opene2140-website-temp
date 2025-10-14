@@ -52,14 +52,8 @@ After installing the original game via the official clients of these stores, Ope
 </article>
 
 ## Demo version
-{: #demo-version}
 
-OpenE2140 requires the full set of assets from the original game, including Mission Pack 2 (due to the new units and buildings it introduces).
-Therefore **demo versions are not supported**, because they lack the Mission Pack 2 content (such as specific tilesets and additional units/buildings),
-which are essential for proper gameplay. As a result, the demo versions are incomplete and cannot be used with OpenE2140.
-
-While this is unfortunate for people wanting to just try out OpenE2140, it is makes sense due to the fact that the demo is very limited
-and was released alongside **of the original game** (which couldn't contain the new assets from Mission Pack 2).
+Demo versions of Earth 2140 do not contain all the required game assets; therefore, they **cannot be used** to play OpenE2140. See [FAQ]({% link faq.md %}#demo-version) for more information.
 
 # How to manually install game assets?
 {: #manual-installation}
