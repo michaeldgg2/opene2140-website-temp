@@ -29,3 +29,7 @@
 html {
     scroll-padding-top: calc($navbar-height + 1.0rem);
 }
+
+pre.highlight {
+    background: var(--bulma-code-background) !important;
+}
