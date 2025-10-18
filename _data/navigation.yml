@@ -1,3 +1,5 @@
+- name: News
+  link: /news/
 - name: Download
   link: /download/
   style: has-text-weight-bold has-text-danger

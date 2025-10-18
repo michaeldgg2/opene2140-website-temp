@@ -52,3 +52,15 @@ hero_title_image_style: hero-title-img
 <div class="is-flex is-justify-content-center">
     <a href="{% link download.html %}" class="button is-primary is-size-5">Download OpenE2140</a>
 </div>
+
+{% if site.posts.size > 0 %}
+    <h2 class="title is-2">Latest News</h2>
+
+    <div class="columns is-multiline">
+        {% for post in site.posts limit: 3 %}
+            <div class="column is-12">
+                {% include post-card.html %}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

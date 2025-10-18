@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="">    
+    <div class="is-size-6 has-text-grey-dark">
+        <span class="icon is-small">
+            <i class="fas fa-calendar-days"></i>
+        </span>
+        <span class="ml-1 mr-5">{{ page.date | date: '%b %-d, %Y' }}</span>
+        
+        <span class="icon is-small">
+            <i class="fas fa-image-portrait"></i>
+        </span>
+        <span class="ml-1">{{ page.author }} </span>
+    </div>
+
+    <h1 class="title is-3 mt-2">{{ page.title }}</h1>
+
+    <p class="subtitle is-5 has-text-grey mt-1 mb-0">
+        {{ page.subtitle }}
+    </p>
+
+    {% if page.tags %}
+        <div class="tags my-4">
+            {% for tag in page.tags %}
+                {% include tag.html tag=tag %}
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+
+<div class="content">
+    {{ content }}
+</div>
