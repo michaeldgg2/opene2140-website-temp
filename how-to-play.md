@@ -2,7 +2,6 @@
 layout: page
 title: How To Play
 permalink: /how-to-play/
-hide_hero: true
 ---
 
 # How to play OpenE2140?

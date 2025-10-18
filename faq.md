@@ -2,7 +2,6 @@
 layout: page
 title: FAQ
 permalink: /faq/
-hide_hero: true
 ---
 
 # Frequently asked questions
