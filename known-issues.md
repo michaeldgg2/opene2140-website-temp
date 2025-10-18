@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /known-issues/
-hide_hero: true
 ---
 
 # Release notes and known issues

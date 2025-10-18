@@ -23,9 +23,9 @@
             {% include cookie-banner.html %}
         {% endif %}
         {% include header.html %}
-        {% unless page.hide_hero %}
+        {% if page.show_hero %}
             {% include hero.html %}
-        {% endunless %}
+        {% endif %}
         {% include callouts.html %}
         <section class="section">
             <div class="container">
