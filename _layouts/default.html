@@ -1,15 +1,4 @@
 <!doctype html>
-{% if page.menubar or page.menubar_toc %}
-    {% assign has_left_sidebar = true %}
-{% endif %}
-
-{% if page.show_sidebar and has_left_sidebar %}
-    {% assign content_width = 'is-4' %}
-{% elsif page.show_sidebar or has_left_sidebar %}
-    {% assign content_width = 'is-8' %}
-{% else %}
-    {% assign content_width = 'is-12' %}
-{% endif %}
 
 <html
     dir="{{ site.direction | default: 'ltr' }}"
@@ -40,18 +29,13 @@
                             {% include menubar.html %}
                         </div>
                     {% endif %}
-                    <main class="column {{ content_width }}" id="main-content">
+                    <main class="column is-12" id="main-content">
                         {% include tabs.html %}
                         {% include showcase.html %}
                         {% include sponsors.html %}
                         {% include gallery.html %}
                         {{ content }}
                     </main>
-                    {% if site.posts and page.show_sidebar %}
-                        <div class="column is-4-desktop is-4-tablet">
-                            {% include latest-posts.html %}
-                        </div>
-                    {% endif %}
                 </div>
             </div>
         </section>
