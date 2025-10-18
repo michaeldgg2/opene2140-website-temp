@@ -2,11 +2,10 @@
 title: OpenE2140
 tagline: A modernized remake of Earth 2140
 name: OpenE2140
-#email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   OpenE2140 is a modernized remake of Earth 2140 with new features.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
 
 # Build settings
 theme: bulma-clean-theme
