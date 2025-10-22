@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-image">
+        {% include image-modal.html ratio=include.ratio link=include.image alt=include.alt large_link=include.large_link %}
+    </div>
+
+    {% if include.description %}
+        <div class="card-content">
+            <div class="content">
+                {{ include.description | markdownify }}
+            </div>
+        </div>
+    {% endif %}
+</div>
