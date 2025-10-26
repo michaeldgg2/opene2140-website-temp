@@ -8,9 +8,6 @@
     {% include head.html %}
     <body>
         {% include skip-to-content.html %}
-        {% if site.cookie_policy %}
-            {% include cookie-banner.html %}
-        {% endif %}
         {% include header.html %}
         {% if page.show_hero %}
             {% include hero.html %}
@@ -42,6 +39,11 @@
         {% unless page.hide_footer %}
             {% include footer.html %}
         {% endunless %}
+
+        {% if site.cookie_policy and site.env.UMAMI_WEBSITE_ID %}
+            {% include cookie-banner.html %}
+        {% endif %}
+
         <script src="{{ '/assets/js/app.js' | relative_url }}" type="text/javascript"></script>
         {%- include footer-scripts.html -%}
     </body>

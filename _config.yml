@@ -16,10 +16,11 @@ paginate_path: "/news/:num"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-environment-variables
 
 # Bulma Clean Theme
 gh_sponsor: false
-cookie_policy: false
+cookie_policy: /cookie-policy/
 force_theme: dark
 fixed_navbar: top
 
