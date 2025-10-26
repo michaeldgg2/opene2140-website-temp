@@ -1,0 +1,57 @@
+<div class="cookie-banner">
+    <div class="container py-3 px-4" id="cookieBanner">
+        <div class="columns is-vcentered">
+            <div class="column">
+                <span>
+                    We use cookies on this site to enhance your user experience (see <a href="{{ site.cookie_policy | relative_url }}">cookie policy</a> for more info).
+                </span>
+            </div>
+            <div class="column is-narrow">
+                <div class="buttons">
+                    <button class="button is-primary" onclick="acceptCookies()">Accept</button>
+                    <button class="button is-primary" onclick="rejectCookies()">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', { expires: 365, path: '/' });
+            toggleCookieBanner();
+
+            loadTrackingScripts();
+        }
+
+        function rejectCookies() {
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            toggleCookieBanner();
+        }
+
+        function toggleCookieBanner() {
+            var showBanner = Cookies.get('showCookieBanner');
+            var banner = document.getElementById('cookieBanner');
+
+            if (showBanner === 'false') {
+                banner.setAttribute('style', 'display: none;');
+            } else {
+                banner.setAttribute('style', 'display: block;');
+            }
+        }
+
+        function loadTrackingScripts() {
+            var script = document.createElement('script');
+            script.src = 'https://cloud.umami.is/script.js';
+            script.setAttribute("data-website-id", "{{ site.env.UMAMI_WEBSITE_ID }}");
+            document.head.appendChild(script);
+        }
+
+        toggleCookieBanner();
+
+        var cookiesAccepted = Cookies.get('cookiesAccepted');
+        if (cookiesAccepted === 'true') {
+            loadTrackingScripts();
+        }
+    </script>
+</div>
