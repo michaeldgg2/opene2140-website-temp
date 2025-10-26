@@ -126,6 +126,8 @@ GEM
       coffee-script-source (~> 1.12)
     jekyll-default-layout (0.1.5)
       jekyll (>= 3.0, < 5.0)
+    jekyll-environment-variables (1.0.1)
+      jekyll (>= 3.0, < 5.x)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-github-metadata (2.16.1)
@@ -259,6 +261,7 @@ DEPENDENCIES
   jekyll-avatar
   jekyll-coffeescript
   jekyll-default-layout
+  jekyll-environment-variables
   jekyll-feed (~> 0.12)
   jekyll-github-metadata
   jekyll-include-cache

@@ -18,7 +18,8 @@ group :jekyll_plugins do
   gem "jekyll-avatar"
   gem "jekyll-remote-theme"
   gem "jekyll-include-cache"
-  
+  gem 'jekyll-environment-variables'
+
   # Plugins to match GitHub.com Markdown
   gem "jemoji"
   gem "jekyll-mentions"
