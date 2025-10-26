@@ -87,7 +87,8 @@ permalink: /download/
             <p>OpenE2140 works on most computers running Windows 10 or later that support DirectX 11 or OpenGL 3+.</p>
             
             <div class="is-flex is-justify-content-center">
-                <a href="{{ windows.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                <a href="{{ windows.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap"
+                    data-umami-event="download-button" data-umami-event-platform="windows">
                     <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
                     <div class="is-family-monospace is-size-6">{{ windows.filename }} ({{ windows.size_mb }} MB)</div>
                 </a>
@@ -115,7 +116,8 @@ permalink: /download/
             <p>OpenE2140 requires Mac systems to be running macOS 10.15 (Catalina) or later.</p>
             
             <div class="is-flex is-justify-content-center">
-                <a href="{{ macos.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                <a href="{{ macos.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap"
+                    data-umami-event="download-button" data-umami-event-platform="macos">
                     <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
                     <div class="is-family-monospace is-size-6">{{ macos.filename }} ({{ macos.size_mb }} MB)</div>
                 </a>
@@ -137,7 +139,8 @@ permalink: /download/
             </p>
             
             <div class="is-flex is-justify-content-center">
-                <a href="{{ linux.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                <a href="{{ linux.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap"
+                    data-umami-event="download-button" data-umami-event-platform="linux">
                     <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
                     <div class="is-family-monospace is-size-6">{{ linux.filename }} ({{ linux.size_mb }} MB)</div>
                 </a>
@@ -164,7 +167,8 @@ permalink: /download/
             <p>OpenE2140 can be compiled from source on all supported platforms.</p>
             
             <div class="is-flex is-justify-content-center">
-                <a href="{{ source.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap">
+                <a href="{{ source.download_url }}" class="button is-large is-flex-direction-column is-whitespace-wrap"
+                    data-umami-event="download-button" data-umami-event-platform="source">
                     <div>Download <span><i class="ml-2 fas fa-download"></i></span></div>
                     <div class="is-family-monospace is-size-6">{{ source.filename }} ({{ source.size_mb }} MB)</div>
                 </a>
