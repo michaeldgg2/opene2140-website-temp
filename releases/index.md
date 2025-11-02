@@ -14,6 +14,8 @@ This page contains list of all OpenE2140 releases and links to their release not
 
 **Current release**: {{ release.name }} ([release notes]({% link releases/{{ release.name }}.md %}))
 
+See the [roadmap page]({% link roadmap.md %}) for an overview of planned development. Detailed list of missing features and current bugs can be found on the [known issues page]({% link known-issues.md %}).
+
 ### Versioning
 
 OpenE2140 uses OpenRA's versioning scheme:

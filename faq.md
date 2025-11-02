@@ -59,6 +59,11 @@ OpenE2140 requires the full set of assets from the original game, **including Mi
 While this is unfortunate for people who want to try OpenE2140, it occurs because the demo is very limited and was released with the original game, so it couldn't include the Mission Pack 2 assets.
 
 
+## What's still missing in OpenE2140? Is there a roadmap of the development?
+
+Yes. See the [roadmap page]({% link roadmap.md %}) for an overview of planned development. For a detailed list of missing features and current bugs, see the [known issues page]({% link known-issues.md %}).
+
+
 ## Where can I ask for help, discuss with other players and developers, or find more information?
 
 The best place to ask questions, discuss development, and connect with the community is [the official OpenE2140 Discord server](https://discord.gg/KNcX5BxA37). Here you can:

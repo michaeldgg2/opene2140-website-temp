@@ -7,6 +7,8 @@ permalink: /known-issues/
 
 **OpenE2140 is far from finished**. Therefore there are still bugs, issues, and other items that are either not implemented or not working correctly. They are listed below and are either gameplay-related and/or more visible in general (i.e., players are likely to see them in the game). Apart from these, there are some other minor visual issues. We **plan to finish and fix** all of them eventually.
 
+For the high-level overview of development plan [see the Roadmap page]({% link roadmap.md %}).
+
 <article class="message is-warning">
     <div class="message-header">AI is not implemented yet</div>
     <div class="message-body">

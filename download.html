@@ -20,7 +20,7 @@ permalink: /download/
             <div class="column">
                 This means that there are still things that either don't work as expected, has issues or don't work at all.
                 <strong>Please read the <a href="{% link known-issues.md %}">list of known issues</a> carefully</strong> to see,
-                if the problems you're experiencing, are something that we're already aware of.
+                if the problems you're experiencing, are something that we're already aware of. For overview of the planned development, see the <a href="{% link roadmap.md %}">roadmap</a>.
             </div>
         </div>
     </div>
@@ -42,6 +42,16 @@ permalink: /download/
         </div>
     </div>
 </article>
+
+<div class="box">
+    <p>
+        <strong>Current release</strong>: <span>{{ release.name }}</span> (<a href="{% link releases/{{ release.name }}.md %}">release notes</a>)
+    </p>
+    <p>
+        For list of all releases and their release notes see the <a href="{% link releases/index.md %}">Releases page</a>.
+    </p>
+</div>
+
 
 <div x-data="{ selectedTab: 'windows' }">
     <div class="tabs is-centered">
